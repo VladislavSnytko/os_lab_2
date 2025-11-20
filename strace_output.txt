@@ -1,0 +1,79 @@
+152   execve("./src/main", ["./src/main", "5", "1", "0", "0", "1000", "-t", "2"], 0x7ffeca6bd220 /* 26 vars */) = 0
+152   brk(NULL)                         = 0x55a6fa6c1000
+152   arch_prctl(0x3001 /* ARCH_??? */, 0x7ffe7d7e1a30) = -1 EINVAL (Invalid argument)
+152   access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+152   openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+152   fstat(3, {st_mode=S_IFREG|0644, st_size=38792, ...}) = 0
+152   mmap(NULL, 38792, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7faeb11fa000
+152   close(3)                          = 0
+152   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+152   read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220q\0\0\0\0\0\0"..., 832) = 832
+152   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\227Sr\5\2W;\227\333\254Y[a\375r\302"..., 68, 824) = 68
+152   fstat(3, {st_mode=S_IFREG|0755, st_size=157224, ...}) = 0
+152   mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7faeb11f8000
+152   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\227Sr\5\2W;\227\333\254Y[a\375r\302"..., 68, 824) = 68
+152   mmap(NULL, 140408, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7faeb11d5000
+152   mmap(0x7faeb11db000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7faeb11db000
+152   mmap(0x7faeb11ec000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7faeb11ec000
+152   mmap(0x7faeb11f2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x7faeb11f2000
+152   mmap(0x7faeb11f4000, 13432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7faeb11f4000
+152   close(3)                          = 0
+152   openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+152   read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+152   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+152   pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+152   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0W\222s/x1X\306o\264\363udX\312$"..., 68, 880) = 68
+152   fstat(3, {st_mode=S_IFREG|0755, st_size=2029592, ...}) = 0
+152   pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+152   pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+152   pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0W\222s/x1X\306o\264\363udX\312$"..., 68, 880) = 68
+152   mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7faeb0fe3000
+152   mmap(0x7faeb1005000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7faeb1005000
+152   mmap(0x7faeb117d000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7faeb117d000
+152   mmap(0x7faeb11cb000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7faeb11cb000
+152   mmap(0x7faeb11d1000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7faeb11d1000
+152   close(3)                          = 0
+152   mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7faeb0fe0000
+152   arch_prctl(ARCH_SET_FS, 0x7faeb0fe0740) = 0
+152   mprotect(0x7faeb11cb000, 16384, PROT_READ) = 0
+152   mprotect(0x7faeb11f2000, 4096, PROT_READ) = 0
+152   mprotect(0x55a6dfe38000, 4096, PROT_READ) = 0
+152   mprotect(0x7faeb1231000, 4096, PROT_READ) = 0
+152   munmap(0x7faeb11fa000, 38792)     = 0
+152   set_tid_address(0x7faeb0fe0a10)   = 152
+152   set_robust_list(0x7faeb0fe0a20, 24) = 0
+152   rt_sigaction(SIGRTMIN, {sa_handler=0x7faeb11dbbf0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7faeb11e9420}, NULL, 8) = 0
+152   rt_sigaction(SIGRT_1, {sa_handler=0x7faeb11dbc90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7faeb11e9420}, NULL, 8) = 0
+152   rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+152   prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+152   brk(NULL)                         = 0x55a6fa6c1000
+152   brk(0x55a6fa6e2000)               = 0x55a6fa6e2000
+152   getpid()                          = 152
+152   fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}) = 0
+152   write(1, "PID=152\n", 8)          = 8
+152   mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7faeb07df000
+152   mprotect(0x7faeb07e0000, 8388608, PROT_READ|PROT_WRITE) = 0
+152   clone(child_stack=0x7faeb0fdefb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[153], tls=0x7faeb0fdf700, child_tidptr=0x7faeb0fdf9d0) = 153
+153   set_robust_list(0x7faeb0fdf9e0, 24 <unfinished ...>
+152   mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+153   <... set_robust_list resumed>)    = 0
+152   <... mmap resumed>)               = 0x7faeaffde000
+153   madvise(0x7faeb07df000, 8368128, MADV_DONTNEED) = 0
+152   mprotect(0x7faeaffdf000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+153   exit(0 <unfinished ...>
+152   <... mprotect resumed>)           = 0
+153   <... exit resumed>)               = ?
+152   clone(child_stack=0x7faeb07ddfb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID <unfinished ...>
+153   +++ exited with 0 +++
+152   <... clone resumed>, parent_tid=[154], tls=0x7faeb07de700, child_tidptr=0x7faeb07de9d0) = 154
+154   set_robust_list(0x7faeb07de9e0, 24 <unfinished ...>
+152   futex(0x7faeb07de9d0, FUTEX_WAIT, 154, NULL <unfinished ...>
+154   <... set_robust_list resumed>)    = 0
+154   madvise(0x7faeaffde000, 8368128, MADV_DONTNEED) = 0
+154   exit(0)                           = ?
+152   <... futex resumed>)              = 0
+154   +++ exited with 0 +++
+152   write(1, "K=5, experiments=1000, threads=2"..., 33) = 33
+152   write(1, "P(win1)=0.440000, P(win2)=0.4950"..., 53) = 53
+152   exit_group(0)                     = ?
+152   +++ exited with 0 +++

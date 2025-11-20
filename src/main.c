@@ -33,7 +33,7 @@ unsigned int xorshift32(unsigned int *state) {
     return x;
 }
 
-void *worker(void *p) {  // функция, которую исполняет каждый поток
+void * worker(void *p) {  // функция, которую исполняет каждый поток
     ThreadArg *a = (ThreadArg *)p;
     unsigned long long w1 = 0, w2 = 0, dr = 0;
     for (int e = 0; e < a->count; ++e) {
@@ -177,4 +177,7 @@ top -H -p 2276
 Коротко: wall здесь — это “стеночное” время,
 то есть фактическое прошедшее время
 выполнения программы от старта до финиша по часам.
+
+STRACE
+strace -f -o strace_output.txt ./src/main 10 1 0 0 10000 -t 2
 */

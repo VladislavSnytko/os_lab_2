@@ -5,7 +5,7 @@
 
 set -euo pipefail
 exe=${1:-./src/main}
-R=1  # повторов
+R=2  # повторов
 out=./test/results.csv
 echo "K,N,T,run,wall" > "$out"
 # Настройте набор параметров по желанию
